@@ -1,5 +1,10 @@
 import { AppComponent } from './app.component';
-import { MockBuilder, MockRender, MockedComponentFixture, ngMocks } from 'ng-mocks';
+import {
+  MockBuilder,
+  MockRender,
+  MockedComponentFixture,
+  ngMocks,
+} from 'ng-mocks';
 import { AppModule } from './app.module';
 
 describe('AppComponent', () => {
@@ -19,6 +24,8 @@ describe('AppComponent', () => {
   });
 
   test('should render title', () => {
-    expect(ngMocks.formatText(ngMocks.find('.content span'))).toEqual('angular-starter app is running!');
+    expect(ngMocks.formatText(ngMocks.find('.content span'))).toEqual(
+      'angular-starter app is running!'
+    );
   });
 });
