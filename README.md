@@ -1,27 +1,40 @@
-# AngularStarter
+# :a: Angular Starter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+> A minimalist Angular starter project with specific config (listed below ⬇️)
 
-## Development server
+:nail_care: [Angular Material](https://material.angular.io/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+:shirt: [Angular ESLint](https://github.com/angular-eslint/angular-eslint)
 
-## Code scaffolding
+:shirt: [Prettier](https://prettier.io)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+:shirt: [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) & [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
-## Build
+:rotating_light: Full [Jest](https://jestjs.io) config
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+:rotating_light: Testing library [ngMocks](https://github.com/help-me-mom/ng-mocks)
+
+:rotating_light: [jasmine-marbles](https://github.com/CodeSequence/jasmine-marbles) testing helpers for RxJS
+
+## Installation
+
+```bash
+# Clone project
+$ git clone https://github.com/despeekapool/angular-starter
+
+# Install dependencies
+$ npm install
+```
+
+## Start server locally
+`npm run start`
+
+Open in browser: http://localhost:4200
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Jest](https://jestjs.io).
 
-## Running end-to-end tests
+## Lint / Format
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm run format` to both lint (ESLint) AND format (Prettier) whole codebase.
